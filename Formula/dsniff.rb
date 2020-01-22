@@ -1,5 +1,5 @@
 class NoBdb5 < Requirement
-  satisfy(:build_env => false) { !Formula.factory("berkeley-db").installed? }
+  satisfy(:build_env => false) { !Formulary.factory("berkeley-db").installed? }
 
   def message; <<-EOS.undent
     This software can fail to compile when Berkeley-DB 5.x is installed.
